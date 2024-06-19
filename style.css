@@ -2,18 +2,18 @@
 *{
     margin: 0;
     padding: 0;
+    resize: none;
+
+    /*Estilos para id=Título */
 }
 body{
     background-color: white;
     font-family: sans-serif;
     font-size: 1em;
-    color: blue;
-    margin-left: 36%;
-    margin-top: 2%;
+    color: rgb(16, 16, 16);
+    margin-left: 10%;
+    margin-top: 10px;
     justify-content: center;
-
-
-
 }
 
 fieldset{
@@ -24,8 +24,8 @@ input, select, button{
     background-color: white;
     font-family: sans-serif;
     font-size: 1em;
-    color: blue;
-    border-radius:5px ;
+    color: rgb(9, 9, 9);
+    border-radius:10px ;
 }
 
 .campo{
@@ -33,9 +33,46 @@ input, select, button{
 }
 .campo.label{
     margin-bottom: 0.2em;
-    color: blue;
+    color: rgb(0, 0, 7);
     display: block;
 }
+
+.grupo:before, .grupo:after{
+    display:table;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input:focus, campo select:focus{
+    background-color: white;
+}
+
+button{
+    font-size: 1.2em;
+    background-color: blue;
+    margin-bottom: 1em;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow:2px 2px 2px rgb (70,68,68);
+    text-shadow: 2px 2px 2px rgb( 0,0,0,2);
+    cursor: pointer;
+}
+
+button:hover{
+    background: blue;
+    text-shadow: none;
+}
+
+
+.campo input[type=text], .campo input[type=password],
+ .campo input[type=email], .campo select {
+
+ }
+ 
+   
 
 
 
@@ -47,11 +84,11 @@ input, select, button{
 
 
 h1{
-    background-color: blue;
+    background-color: rgb(0, 0, 15);
 }
 
-#título{
-    background-color: green;
+#Titulo {
+    background-color: rgb(240, 246, 240);
 }
 
 .subtítulo{
