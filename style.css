@@ -3,9 +3,32 @@
     margin: 0;
     padding: 0;
     resize: none;
+}
 
     /*Estilos para id=Título */
-}
+
+    h2{
+
+        color:blue;
+    }
+
+    /* O media está selado para telas de no máximo 500 px, e indicando seu estilo */
+    @media (max-width: 500px) {
+
+        h2{
+
+            color: red;
+            font-size: 50 px;
+            font-family:"Roboto";sans-serif;
+        }
+    }
+
+
+        
+    
+
+
+
 body{
     background-color: white;
     font-family: sans-serif;
